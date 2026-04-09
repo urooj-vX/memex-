@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+env/
+venv/
+
+# Node / React
+node_modules/
+dist/
+.env
+.env.local
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Script
+generate_history.py
+.git_history_mock
