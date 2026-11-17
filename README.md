@@ -23,6 +23,19 @@ Memex is not just an expense tracker. It is a fully decoupled **MERN-style** ful
 - **Vampire Expense Radar:** Automatically scans for and identifies hidden recurring subscriptions, allowing you to mock-sever them with a single click.
 - **Floating AI Co-Pilot:** A simulated, highly intelligent conversational agent that knows your 6-month history. Ask it: *"Can I afford a PS5?"* and watch it calculate your liquidity in real-time.
 
+## 📸 Interface Snapshots
+
+<div align="center">
+  <img src="./assets/screenshots/memex-landing.png" alt="Memex landing page screenshot" width="1000" />
+  <p><em>Landing experience: the cinematic Memex homepage.</em></p>
+
+  <img src="./assets/screenshots/memex-dashboard.png" alt="Memex dashboard screenshot" width="1000" />
+  <p><em>Archive dashboard: behavioral archetype analysis and capital flow insights.</em></p>
+
+  <img src="./assets/screenshots/memex-forecast.png" alt="Memex forecast screenshot" width="1000" />
+  <p><em>Forecast view: five-year wealth projection and vampire expense radar.</em></p>
+</div>
+
 ---
 
 ## 🛠 Architecture
