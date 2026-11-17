@@ -41,3 +41,60 @@ flowchart LR
     API --> History[Sample history and insight generation]
     API --> Forecast[Wealth scenario calculation]
 ```
+
+## Run locally
+
+### Prerequisites
+
+- Python 3
+- Node.js and npm
+
+### 1. Start the API
+
+From the repository root:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt flask-cors
+python app.py
+```
+
+The API starts at `http://localhost:8000`.
+
+### 2. Start the frontend
+
+In another terminal:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open the local URL printed by Vite (by default, `http://localhost:5173`).
+
+## API endpoints
+
+All endpoints accept and return JSON unless otherwise noted.
+
+| Method | Path | Purpose |
+| --- | --- | --- |
+| `POST` | `/predict` | Classify a transaction's spending risk |
+| `POST` | `/connect_account` | Simulate an account connection |
+| `POST` | `/analyze_history` | Generate sample history and summary insights |
+| `POST` | `/forecast` | Calculate illustrative wealth scenarios |
+| `POST` | `/chat` | Return a scripted co-pilot response |
+
+## Model training
+
+The checked-in model files are loaded by the API. To regenerate them from the included dataset:
+
+```bash
+source .venv/bin/activate
+python train_model.py
+```
+
+## Scope and limitations
+
+Memex is a demonstration project. Account linking, history, recurring charges, and co-pilot responses are mocked; projections are illustrative and depend on simplified assumptions. Do not use the output as financial advice or as a substitute for verified transaction data.
